@@ -5,11 +5,13 @@ BLOCK_FIELDS_TO_EXPORT = [
     'hash',
     'last_block_hash',
     'data_hash',
-    'proposer',
+    'validators_hash',
+    'consensus_hash',
+    'app_hash'
+    'proposer_addr',
+    'timestamp',
     'num_txs',
-    'time'
 ]
-
 
 def blocks_item_exporter(blocks_output):
     return CompositeItemExporter(
