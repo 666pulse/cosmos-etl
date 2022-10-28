@@ -5,15 +5,17 @@ class CosmBlockMapper:
 
     def json_dict_to_block(self, json_dict):
         block = CosmBlock()
-        block.height = str_to_dec(json_dict['block']['header'].get('height'))
+        header = json_dict['block']['header']
+
+        block.height = str_to_dec(header.get('height'))
         block.hash = json_dict['block_id'].get('hash')
-        block.last_block_hash = json_dict['block']['header'].get('last_block_id', {}).get('hash')
-        block.data_hash = json_dict['block']['header'].get('data_hash')
-        block.validators_hash = json_dict['block']['validators_hash']
-        block.consensus_hash = json_dict['block']['consensus_hash']
-        block.app_hash = json_dict['block']['app_hash']
-        block.proposer_addr = json_dict['block']['header'].get('proposer_address')
-        block.timestamp = json_dict['block']['header'].get('time')
+        block.last_block_hash = header.get('last_block_id', {}).get('hash')
+        block.data_hash = header.get('data_hash')
+        block.validators_hash = header.get('validators_hash')
+        block.consensus_hash = header.get('consensus_hash')
+        block.app_hash = header.get('app_hash')
+        block.proposer_addr = header.get('proposer_address')
+        block.timestamp = header.get('time')
         block.num_txs = len(json_dict['block']['data'].get('txs', []))
         return block
 
