@@ -7,7 +7,7 @@ BLOCK_FIELDS_TO_EXPORT = [
     'data_hash',
     'validators_hash',
     'consensus_hash',
-    'app_hash'
+    'app_hash',
     'proposer_addr',
     'timestamp',
     'num_txs',
