@@ -18,7 +18,8 @@ TRANSACTION_FIELDS_TO_EXPORT = [
 EVENT_FIELDS_TO_EXPORT = [
     '_type',
     'attributes',
-    'tx_hash'
+    'tx_hash',
+    'height',
 ]
 
 

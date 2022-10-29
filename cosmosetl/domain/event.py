@@ -3,3 +3,4 @@ class CosmEvent:
         self._type = None
         self.attributes = None
         self.tx_hash = None
+        self.height = None

@@ -3,8 +3,9 @@ from cosmosetl.domain.event import CosmEvent
 from cosmosetl.utils import b64decode
 
 class CosmEventMapper:
-    def json_dict_to_event(self, json_dict, tx_hash=None):
+    def json_dict_to_event(self, json_dict, tx_hash=None, height=None):
         event = CosmEvent()
+
         event._type = json_dict.get("type")
         attributes = json.dumps([
             {'key': b64decode(attr.get('key')), 'value': b64decode(attr.get('value'))}
@@ -12,12 +13,15 @@ class CosmEventMapper:
         ])
         event.attributes = attributes if attributes else None
         event.tx_hash = tx_hash
+        event.height = height
+
         return event
-        
+
     def event_to_dict(self, event):
         return {
             "type": "event",
             "_type": event._type,
             "attributes": event.attributes,
-            "tx_hash": event.tx_hash
+            "tx_hash": event.tx_hash,
+            "height": event.height,
         }

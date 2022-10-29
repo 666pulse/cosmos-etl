@@ -11,24 +11,28 @@ class CosmTransactionMapper:
     def json_dict_to_transaction(self, json_dict):
         transaction = CosmTransaction()
         transaction.hash = json_dict.get("hash")
-        transaction.height = str_to_dec(json_dict.get("height"))
+        height = str_to_dec(json_dict.get("height"))
+        transaction.height = height
         transaction.index = json_dict.get("index")
-        transaction.code = json_dict.get("tx_result", {}).get("code")
-        transaction.gas_used = json_dict.get("tx_result", {}).get("gas_used")
-        transaction.gas_wanted = json_dict.get("tx_result", {}).get("gas_wanted")
-        transaction.num_events = len(json_dict.get("tx_result", {}).get("events", []))
+        tx_result = json_dict.get("tx_result", {})
+        transaction.code = tx_result.get("code")
+        transaction.gas_used = tx_result.get("gas_used")
+        transaction.gas_wanted = tx_result.get("gas_wanted")
+        transaction.num_events = len(tx_result.get("events", []))
         transaction.root_hash = json_dict.get("proof", {}).get("root_hash")
         transaction.tx = json_dict.get("tx")
         # simple b64decoding doesn't work for data
         # transaction.data = b64decode(json_dict.get("tx_result", {}).get("data"))
-        transaction.raw_data = json_dict.get("tx_result", {}).get("data")
-        transaction.raw_log = json_dict.get("tx_result", {}).get("log")
+        transaction.raw_data = tx_result.get("data")
+        transaction.raw_log = tx_result.get("log")
+
         transaction.events = [
-            self.event_mapper.json_dict_to_event(evt, tx_hash=transaction.hash)
+            self.event_mapper.json_dict_to_event(evt, tx_hash=transaction.hash, height=height)
             for evt in json_dict.get('tx_result', {}).get('events', [])
         ]
+
         return transaction
-        
+
     def transaction_to_dict(self, transaction):
         return {
             "type": "transaction",
