@@ -14,7 +14,9 @@ class CosmTransactionMapper:
         height = str_to_dec(json_dict.get("height"))
         transaction.height = height
         transaction.index = json_dict.get("index")
+
         tx_result = json_dict.get("tx_result", {})
+
         transaction.code = tx_result.get("code")
         transaction.gas_used = tx_result.get("gas_used")
         transaction.gas_wanted = tx_result.get("gas_wanted")
@@ -28,7 +30,7 @@ class CosmTransactionMapper:
 
         transaction.events = [
             self.event_mapper.json_dict_to_event(evt, tx_hash=transaction.hash, height=height)
-            for evt in json_dict.get('tx_result', {}).get('events', [])
+            for evt in tx_result.get('events', [])
         ]
 
         return transaction
@@ -42,8 +44,8 @@ class CosmTransactionMapper:
             "code": transaction.code,
             "gas_used": transaction.gas_used,
             "gas_wanted": transaction.gas_wanted,
-            "num_events": transaction.num_events,
             "root_hash": transaction.root_hash,
+            "num_events": transaction.num_events,
             "tx": transaction.tx,
             "data": transaction.data,
             "raw_data": transaction.raw_data,

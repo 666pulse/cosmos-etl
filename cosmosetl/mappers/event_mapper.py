@@ -6,7 +6,7 @@ class CosmEventMapper:
     def json_dict_to_event(self, json_dict, tx_hash=None, height=None):
         event = CosmEvent()
 
-        event._type = json_dict.get("type")
+        event.event_type = json_dict.get("type")
         attributes = json.dumps([
             {'key': b64decode(attr.get('key')), 'value': b64decode(attr.get('value'))}
             for attr in json_dict.get("attributes", [])
@@ -20,8 +20,8 @@ class CosmEventMapper:
     def event_to_dict(self, event):
         return {
             "type": "event",
-            "_type": event._type,
-            "attributes": event.attributes,
-            "tx_hash": event.tx_hash,
+            "event_type": event.event_type,
             "height": event.height,
+            "tx_hash": event.tx_hash,
+            "attributes": event.attributes,
         }

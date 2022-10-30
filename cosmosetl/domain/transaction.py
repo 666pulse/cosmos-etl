@@ -6,8 +6,8 @@ class CosmTransaction:
         self.code = None
         self.gas_used = None
         self.gas_wanted = None
-        self.num_events = None
         self.root_hash = None
+        self.num_events = None
         self.tx = None
         self.data = None
         self.raw_data = None

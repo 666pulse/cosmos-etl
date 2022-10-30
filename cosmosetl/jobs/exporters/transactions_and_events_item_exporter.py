@@ -7,19 +7,15 @@ TRANSACTION_FIELDS_TO_EXPORT = [
     'code',
     'gas_used',
     'gas_wanted',
-    'num_events',
     'root_hash',
-    'tx',
-    'data',
-    'raw_data',
-    'raw_log',
+    'num_events',
 ]
 
 EVENT_FIELDS_TO_EXPORT = [
-    '_type',
-    'attributes',
-    'tx_hash',
+    'event_type',
     'height',
+    'tx_hash',
+    'attributes',
 ]
 
 
