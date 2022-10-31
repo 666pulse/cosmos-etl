@@ -15,7 +15,8 @@ EVENT_FIELDS_TO_EXPORT = [
     'event_type',
     'height',
     'tx_hash',
-    'attributes',
+    'keys',
+    'values',
 ]
 
 

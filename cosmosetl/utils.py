@@ -43,7 +43,7 @@ def str_to_timestamp(date_string, format="%Y-%m-%dT%H:%M:%S.%f%z"):
 
 def b64decode(input_string, encoding='utf-8'):
     if input_string is None:
-        return None
+        return ''
     try:
         return base64.b64decode(input_string).decode(encoding)
     except Exception:
