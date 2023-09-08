@@ -1,0 +1,69 @@
+{
+  'type': 'delegate',
+  'attributes': [{
+    'key': 'dmFsaWRhdG9y',
+    'value': 'c3RhcnN2YWxvcGVyMXVsdmdtbHR0eGhybm1lZ3U1N3NqMG4ycWM3eHZ0cm45MjQ1anR1',
+    'index': True
+  }, {
+    'key': 'YW1vdW50',
+    'value': 'NDAwMDAwMHVzdGFycw==',
+    'index': True
+  }, {
+    'key': 'bmV3X3NoYXJlcw==',
+    'value': 'NDAwMDAwMC4wMDAwMDAwMDAwMDAwMDAwMDA=',
+    'index': True
+  }]
+}
+
+
+// 0510631DDED4A9C79EA7EB059DDF619CE6778EC62AAD12CB8AC31E6289D14805
+
+{
+  'type': 'wasm-set-ask',
+  'attributes': [{
+    'key': 'X2NvbnRyYWN0X2FkZHJlc3M=',
+    'value': 'c3RhcnMxZnZoY255ZGR1a2NxZm50N25sd3YzdGhtNXdlMjJseXh5eHlscjloNzdjdmdrY240M3hmc3ZndjBwbA==',
+    'index': True
+  }, {
+    'key': 'Y29sbGVjdGlvbg==',
+    'value': 'c3RhcnMxOWpxNm1qODRjbnQ5cDdzYWdqeHFmOGh4dGN6d2M4d2xwdXdlNHNoNjJ3NDVhaGVzZXVlczU3bjQyMA==',
+    'index': True
+  }, {
+    'key': 'dG9rZW5faWQ=',
+    'value': 'Njc0MA==',
+    'index': True
+  }, {
+    'key': 'c2VsbGVy',
+    'value': 'c3RhcnMxMHBtd2pjaDhlNjd3a24wMzN6cTZuNGducXhhZmpjdHI1Y3VzeWM=',
+    'index': True
+  }, {
+    'key': 'cHJpY2U=',
+    'value': 'MjAwMDAwMDAwMDAwdXN0YXJz',
+    'index': True
+  }, {
+    'key': 'ZXhwaXJlcw==',
+    'value': 'MTY1OTY1ODAzNC4yOTMwMDAwMDA=',
+    'index': True
+  }]
+}
+
+
+[{
+  "key": "_contract_address",
+  "value": "stars1fvhcnyddukcqfnt7nlwv3thm5we22lyxyxylr9h77cvgkcn43xfsvgv0pl"
+}, {
+  "key": "collection",
+  "value": "stars19jq6mj84cnt9p7sagjxqf8hxtczwc8wlpuwe4sh62w45aheseues57n420"
+}, {
+  "key": "token_id",
+  "value": "6740"
+}, {
+  "key": "seller",
+  "value": "stars10pmwjch8e67wkn033zq6n4gnqxafjctr5cusyc"
+}, {
+  "key": "price",
+  "value": "200000000000ustars"
+}, {
+  "key": "expires",
+  "value": "1659658034.293000000"
+}]

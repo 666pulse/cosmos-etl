@@ -1,0 +1,91 @@
+{
+  'hash': 'CFB51026F3667FE49C9FB8DBE51588F2E5342877BB4D2CB49B7A36A52818058E',
+  'height': '3630311',
+  'index': 0,
+  'tx_result': {
+    'code': 0,
+    'data': 'CiYKJC9jb3Ntd2FzbS53YXNtLnYxLk1zZ0V4ZWN1dGVDb250cmFjdA==',
+    'log': '[{"events":[{"type":"execute","attributes":[{"key":"_contract_address","value":"stars120zjnnpca5p42pc5f5fqaj923q8cu9ekr2duw25fd8f9p4gzrhcsy6g44z"}]},{"type":"message","attributes":[{"key":"action","value":"/cosmwasm.wasm.v1.MsgExecuteContract"},{"key":"module","value":"wasm"},{"key":"sender","value":"stars1z4ecae6w247fxa2j6ganwzwuja7zgw03yfkhcp"}]},{"type":"wasm","attributes":[{"key":"_contract_address","value":"stars120zjnnpca5p42pc5f5fqaj923q8cu9ekr2duw25fd8f9p4gzrhcsy6g44z"},{"key":"action","value":"burn"},{"key":"sender","value":"stars1z4ecae6w247fxa2j6ganwzwuja7zgw03yfkhcp"},{"key":"token_id","value":"4411"}]}]}]',
+    'info': '',
+    'gas_wanted': '74329',
+    'gas_used': '58772',
+    'events': [{
+      'type': 'tx',
+      'attributes': [{
+        'key': 'ZmVl',
+        'value': 'MHVzdGFycw==',
+        'index': True
+      }]
+    }, {
+      'type': 'tx',
+      'attributes': [{
+        'key': 'YWNjX3NlcQ==',
+        'value': 'c3RhcnMxejRlY2FlNncyNDdmeGEyajZnYW53end1amE3emd3MDN5ZmtoY3AvNjA0MA==',
+        'index': True
+      }]
+    }, {
+      'type': 'tx',
+      'attributes': [{
+        'key': 'c2lnbmF0dXJl',
+        'value': 'UUJFQmM3ZHBXb01rd3FwZFNnTEVuK1pYT0M0Z2t1WUx2UlFXOTZBbzc5dHI2S3E1WTVJaHNrbkZZblZwckU4TUQxV1BXWm5FOUF2Q1gvVjl6Vk56L0E9PQ==',
+        'index': True
+      }]
+    }, {
+      'type': 'message',
+      'attributes': [{
+        'key': 'YWN0aW9u',
+        'value': 'L2Nvc213YXNtLndhc20udjEuTXNnRXhlY3V0ZUNvbnRyYWN0',
+        'index': True
+      }]
+    }, {
+      'type': 'message',
+      'attributes': [{
+        'key': 'bW9kdWxl',
+        'value': 'd2FzbQ==',
+        'index': True
+      }, {
+        'key': 'c2VuZGVy',
+        'value': 'c3RhcnMxejRlY2FlNncyNDdmeGEyajZnYW53end1amE3emd3MDN5ZmtoY3A=',
+        'index': True
+      }]
+    }, {
+      'type': 'execute',
+      'attributes': [{
+        'key': 'X2NvbnRyYWN0X2FkZHJlc3M=',
+        'value': 'c3RhcnMxMjB6am5ucGNhNXA0MnBjNWY1ZnFhajkyM3E4Y3U5ZWtyMmR1dzI1ZmQ4ZjlwNGd6cmhjc3k2ZzQ0eg==',
+        'index': True
+      }]
+    }, {
+      'type': 'wasm',
+      'attributes': [{
+        'key': 'X2NvbnRyYWN0X2FkZHJlc3M=',
+        'value': 'c3RhcnMxMjB6am5ucGNhNXA0MnBjNWY1ZnFhajkyM3E4Y3U5ZWtyMmR1dzI1ZmQ4ZjlwNGd6cmhjc3k2ZzQ0eg==',
+        'index': True
+      }, {
+        'key': 'YWN0aW9u',
+        'value': 'YnVybg==',
+        'index': True
+      }, {
+        'key': 'c2VuZGVy',
+        'value': 'c3RhcnMxejRlY2FlNncyNDdmeGEyajZnYW53end1amE3emd3MDN5ZmtoY3A=',
+        'index': True
+      }, {
+        'key': 'dG9rZW5faWQ=',
+        'value': 'NDQxMQ==',
+        'index': True
+      }]
+    }],
+    'codespace': ''
+  },
+  'tx': 'CsABCrcBCiQvY29zbXdhc20ud2FzbS52MS5Nc2dFeGVjdXRlQ29udHJhY3QSjgEKLHN0YXJzMXo0ZWNhZTZ3MjQ3ZnhhMmo2Z2Fud3p3dWphN3pndzAzeWZraGNwEkBzdGFyczEyMHpqbm5wY2E1cDQycGM1ZjVmcWFqOTIzcThjdTlla3IyZHV3MjVmZDhmOXA0Z3pyaGNzeTZnNDR6Ghx7ImJ1cm4iOnsidG9rZW5faWQiOiI0NDExIn19EgRidXJuEmYKUQpGCh8vY29zbW9zLmNyeXB0by5zZWNwMjU2azEuUHViS2V5EiMKIQMfybl8U1tBH9TLYKwgyF8juOh5ZCCmTE9FQOOL5a0CJhIECgIIARiYLxIRCgsKBnVzdGFycxIBMBDZxAQaQEARAXO3aVqDJMKqXUoCxJ/mVzguIJLmC70UFvegKO/ba+iquWOSIbJJxWJ1aaxPDA9Vj1mZxPQLwl/1fc1Tc/w=',
+  'proof': {
+    'root_hash': 'E71964FBB11EAAA9C584F4F5160BD4D9E2FB14075E61F8536978DB07C9F5E26A',
+    'data': 'CsABCrcBCiQvY29zbXdhc20ud2FzbS52MS5Nc2dFeGVjdXRlQ29udHJhY3QSjgEKLHN0YXJzMXo0ZWNhZTZ3MjQ3ZnhhMmo2Z2Fud3p3dWphN3pndzAzeWZraGNwEkBzdGFyczEyMHpqbm5wY2E1cDQycGM1ZjVmcWFqOTIzcThjdTlla3IyZHV3MjVmZDhmOXA0Z3pyaGNzeTZnNDR6Ghx7ImJ1cm4iOnsidG9rZW5faWQiOiI0NDExIn19EgRidXJuEmYKUQpGCh8vY29zbW9zLmNyeXB0by5zZWNwMjU2azEuUHViS2V5EiMKIQMfybl8U1tBH9TLYKwgyF8juOh5ZCCmTE9FQOOL5a0CJhIECgIIARiYLxIRCgsKBnVzdGFycxIBMBDZxAQaQEARAXO3aVqDJMKqXUoCxJ/mVzguIJLmC70UFvegKO/ba+iquWOSIbJJxWJ1aaxPDA9Vj1mZxPQLwl/1fc1Tc/w=',
+    'proof': {
+      'total': '1',
+      'index': '0',
+      'leaf_hash': '5xlk+7EeqqnFhPT1FgvU2eL7FAdeYfhTaXjbB8n14mo=',
+      'aunts': []
+    }
+  }
+}

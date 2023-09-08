@@ -4,6 +4,9 @@ class CosmBlock:
         self.hash = None
         self.last_block_hash = None
         self.data_hash = None
-        self.proposer = None
+        self.validators_hash = None
+        self.consensus_hash = None
+        self.app_hash = None
+        self.proposer_addr = None
+        self.timestamp = None
         self.num_txs = None
-        self.time = None
